@@ -13,6 +13,8 @@ dp.set_display()
 
 mx.init_mixer()
 
+dp.update()
+
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -43,12 +45,16 @@ while True:
                 mx.stop()
             if event.key == pygame.K_KP_DIVIDE:
                 mx.page_down()
+                dp.update()
             if event.key == pygame.K_KP_MULTIPLY:
                 mx.page_up()
+                dp.update()
             if event.key == pygame.K_KP_MINUS:
                 mx.vol_down()
+                dp.update()
             if event.key == pygame.K_KP_PLUS:
                 mx.vol_up()
+                dp.update()
             if event.key == pygame.K_KP_ENTER:
                 mx.pause()
             if event.key == pygame.K_BACKSPACE:
