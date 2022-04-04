@@ -48,6 +48,10 @@ def vol_down():
         master_vol -= 1
         print('Master Volume is set to: ' + str(master_vol))
 
+def get_vol():
+    global master_vol
+    return master_vol
+
 def page_up():
     global page
     if page < math.floor(len(sounds)/10):
@@ -59,6 +63,14 @@ def page_down():
     if page > 0:
         page -= 1
         print('Key-Mapping Page is set to: ' + str(page))
+
+def get_page():
+    global page
+    return page
+
+def get_sounds():
+    global sounds
+    return sounds
 
 def hello():
     try:
