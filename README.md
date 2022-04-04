@@ -140,3 +140,7 @@ You can alternatively connect your loudspeakers via Bluetooth.
 ### 7. Connect your Pi to power and wait for it to say "Hello".
 
 ### 8. Enjoy. :D
+- You do not have to be connected to your Pi with a smartphone or a laptop to use it as a Sampler.
+- You can close the Sampler when connected via VNC with the X in the top right corner. Then your Pi behaves like any other until you restart it.
+- You can see the program output in the commandline when connected to the pi via VNC, if you move the Window to the side.
+- If you want your changes in the SamplerConfig to take effect, you have to restart the Sampler.
