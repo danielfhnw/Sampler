@@ -23,9 +23,9 @@ def update():
     txt_sounds2 = font.render("Vol:", True, (255,255,255))
     screen.blit(txt_sounds2, (1800,50))
     sounds = mx.get_sounds()
-    for i in range(9):
+    for i in range(10):
         try:
-            txt = font.render(str(i) + ":   " + str(sounds[i+page*10][0]), True, (255,255,255))
+            txt = font.render(str(i) + ":   " + str(sounds[i+page*10][0])[0:20], True, (255,255,255))
             txt2 = font.render(str(sounds[i+page*10][1]), True, (255,255,255))
             screen.blit(txt, (1350,i*50+100))
             screen.blit(txt2, (1800,i*50+100))
